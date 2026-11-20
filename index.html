@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
+<meta content="#111827" name="theme-color">
+<link href="https://www.jnlsoftware.pl/tools/wallpaper-fit/" rel="canonical">
+<link href="https://www.jnlsoftware.pl/tools/wallpaper-fit/" hreflang="pl" rel="alternate">
+<link href="https://www.jnlsoftware.pl/en/tools/wallpaper-fit/" hreflang="en" rel="alternate">
+<link href="https://www.jnlsoftware.pl/it/tools/wallpaper-fit/" hreflang="it" rel="alternate">
+<link href="https://www.jnlsoftware.pl/tools/wallpaper-fit/" hreflang="x-default" rel="alternate">
+<title>JNL Wallpaper Fit — automatyczne dopasowanie tapety do telefonu</title>
+<meta content="Dopasuj zdjęcie do ekranu telefonu. Wybierz rozdzielczość, przytnij obraz lub dodaj rozmyte tło. Przetwarzanie odbywa się lokalnie w przeglądarce." name="description">
+<meta content="JNL Wallpaper Fit — automatyczne dopasowanie tapety do telefonu" property="og:title">
+<meta content="Dopasuj zdjęcie do ekranu telefonu. Wybierz rozdzielczość, przytnij obraz lub dodaj rozmyte tło. Przetwarzanie odbywa się lokalnie w przeglądarce." property="og:description">
+<meta content="website" property="og:type">
+<meta content="https://www.jnlsoftware.pl/tools/wallpaper-fit/" property="og:url">
+<meta content="https://www.jnlsoftware.pl/tools/wallpaper-fit/assets/icons/icon-512.png" property="og:image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="JNL Wallpaper Fit — automatyczne dopasowanie tapety do telefonu" name="twitter:title">
+<meta content="Dopasuj zdjęcie do ekranu telefonu. Wybierz rozdzielczość, przytnij obraz lub dodaj rozmyte tło. Przetwarzanie odbywa się lokalnie w przeglądarce." name="twitter:description">
+<meta content="https://www.jnlsoftware.pl/tools/wallpaper-fit/assets/icons/icon-512.png" name="twitter:image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JNL Wallpaper Fit",
+  "url": "https://www.jnlsoftware.pl/tools/wallpaper-fit/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Web browser",
+  "description": "Dopasuj zdjęcie do ekranu telefonu. Wybierz rozdzielczość, przytnij obraz lub dodaj rozmyte tło. Przetwarzanie odbywa się lokalnie w przeglądarce.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "JNL Software",
+    "url": "https://www.jnlsoftware.pl/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  }
+}
+</script>
+<link href="manifest.webmanifest" rel="manifest">
+<link href="assets/icons/icon-512.png" rel="icon" type="image/png">
+<link href="assets/icons/icon-192.png" rel="apple-touch-icon">
+<link href="css/style.css?v=20261115" rel="stylesheet">
+</head>
+<body>
+<div class="install-banner" hidden="" id="installBanner">
+<div>
+<strong data-i18n="install_title">Dodaj jako aplikację</strong>
+<p data-i18n="install_text">Możesz dodać JNL Wallpaper Fit do ekranu głównego telefonu.</p>
+</div>
+<button class="primary small" data-i18n="install_btn" id="installBtn" type="button">Dodaj</button>
+<button aria-label="Zamknij propozycję instalacji" class="ghost small" id="installCloseBtn" type="button">×</button>
+</div>
+<header class="hero">
+<nav class="topbar">
+<a class="brand" href="#">
+<img alt="JNL Wallpaper Fit" src="assets/icons/icon-512.png">
+<span>
+<strong>JNL Wallpaper Fit</strong>
+<small data-i18n="brand_subtitle">Free Phone Wallpaper Adapter</small>
+</span>
+</a>
+<div class="top-actions">
+<a href="https://www.jnlsoftware.pl/tools/" class="pill">Narzędzia</a><a href="?lang=pl" hreflang="pl" class="pill active" aria-current="page">PL</a><a href="?lang=en" hreflang="en" class="pill">EN</a><a href="?lang=it" hreflang="it" class="pill">IT</a></div>
+</nav>
+<section class="hero-grid">
+<div>
+<p class="eyebrow" data-i18n="eyebrow">Darmowe narzędzie od JNL Software</p>
+<h1 data-i18n="hero_title">Wczytaj zdjęcie. My wykryjemy ekran i przygotujemy tapetę.</h1>
+<p class="lead" data-i18n="hero_lead">Prosty tryb domyślny, PWA na telefon i prywatność zdjęcia: obraz nie opuszcza Twojej przeglądarki.</p>
+<div class="privacy-badge">
+<span>✓</span>
+<p data-i18n="privacy_badge">Twoje zdjęcie nie jest wysyłane na serwer. Obróbka odbywa się lokalnie w przeglądarce.</p>
+</div>
+</div>
+<div class="hero-card">
+<div class="mini-phone"><div></div></div>
+<p data-i18n="hero_card">PWA, tryb offline, bezpieczne strefy i wygodniejsza obsługa mobilna.</p>
+</div>
+</section>
+</header>
+<main class="app-shell">
+<section class="panel controls-panel">
+<h2 data-i18n="step1">1. Wczytaj zdjęcie</h2>
+<label class="drop-zone" for="fileInput" id="dropZone">
+<input accept="image/*" id="fileInput" type="file" aria-label="Kliknij albo przeciągnij zdjęcie tutaj">
+<strong data-i18n="drop_title">Kliknij albo przeciągnij zdjęcie tutaj</strong>
+<span data-i18n="drop_subtitle">JPG, PNG, WEBP, BMP</span>
+</label>
+<p class="muted" data-i18n="no_file" id="fileInfo">Nie wczytano pliku.</p>
+<h2 data-i18n="step2">2. Ekran telefonu</h2>
+<div class="auto-card">
+<div class="auto-icon">◎</div>
+<div>
+<strong data-i18n="auto_title" id="detectedTitle">Automatyczne dopasowanie</strong>
+<p class="muted" id="detectInfo">Wykrywanie ekranu…</p>
+</div>
+</div>
+<div class="grid-2">
+<button class="secondary" data-i18n="detect_again" id="detectScreenBtn" type="button">Wykryj ponownie</button>
+<button class="secondary" data-i18n="portrait" id="portraitBtn" type="button">Wymuś pion</button>
+</div>
+<details class="advanced" id="advancedDetails">
+<summary data-i18n="advanced_summary">Nie zgadza się? Pokaż ustawienia zaawansowane</summary>
+<div class="advanced-inner">
+<div class="grid-2">
+<label class="field">
+<span data-i18n="width">Szerokość</span>
+<input id="targetWidth" max="10000" min="240" type="number" value="1080">
+</label>
+<label class="field">
+<span data-i18n="height">Wysokość</span>
+<input id="targetHeight" max="10000" min="240" type="number" value="2408">
+</label>
+</div>
+<div class="buttons-row">
+<button class="secondary" data-i18n="swap" id="swapBtn" type="button">Zamień W/H</button>
+<button class="secondary" data-i18n="use_default" id="useDefaultBtn" type="button">Domyślne FHD+</button>
+</div>
+<div class="tabs">
+<button class="tab-btn active" data-i18n="tab_phones" data-tab="phones" id="tabPhones" type="button">Telefony</button>
+<button class="tab-btn" data-i18n="tab_resolutions" data-tab="resolutions" id="tabResolutions" type="button">Rozdzielczości</button>
+</div>
+<div class="tab-panel active" id="phonesTab">
+<label class="field">
+<span data-i18n="search_phone">Szukaj telefonu</span>
+<input id="phoneSearch" placeholder="Samsung, iPhone, Hammer, Xiaomi..." type="text">
+</label>
+<label class="field">
+<span data-i18n="brand_filter">Filtr marki</span>
+<select id="brandFilter"></select>
+</label>
+<select class="device-list" id="phoneSelect" size="7" aria-label="Telefony"></select>
+<p class="muted" id="phoneCount"></p>
+</div>
+<div class="tab-panel" id="resolutionsTab">
+<label class="field">
+<span data-i18n="common_resolutions">Popularne rozdzielczości</span>
+<select class="device-list" id="resolutionSelect" size="8" aria-label="Rozdzielczości"></select>
+</label>
+</div>
+</div>
+</details>
+<h2 data-i18n="step3">3. Dopasuj</h2>
+<label class="field">
+<span data-i18n="fit_mode">Tryb</span>
+<select id="fitMode">
+<option data-i18n="mode_fit_blur" value="fitBlur">Pełny obraz + rozmyte tło</option>
+<option data-i18n="mode_fill_crop" value="fillCrop">Wypełnij ekran / kadrowanie centralne</option>
+<option data-i18n="mode_fit_color" value="fitColor">Pełny obraz + kolor tła</option>
+</select>
+</label>
+<div class="slider-field">
+<div><span data-i18n="scale">Skala obrazu</span><b id="scaleValue">96%</b></div>
+<input id="scale" max="125" min="50" type="range" value="96">
+</div>
+<div class="slider-field">
+<div><span data-i18n="offset_x">Przesunięcie X</span><b id="offsetXValue">0%</b></div>
+<input id="offsetX" max="100" min="-100" type="range" value="0">
+</div>
+<div class="slider-field">
+<div><span data-i18n="offset_y">Przesunięcie Y</span><b id="offsetYValue">0%</b></div>
+<input id="offsetY" max="100" min="-100" type="range" value="0">
+</div>
+<label class="toggle-row">
+<input checked id="safeZonesToggle" type="checkbox">
+<span data-i18n="safe_zones">Pokaż bezpieczne strefy pod zegar, ikonki i pasek nawigacji</span>
+</label>
+<details class="details-row">
+<summary data-i18n="background_settings">Tło i jakość</summary>
+<div class="slider-field">
+<div><span data-i18n="blur">Rozmycie tła</span><b id="blurValue">34 px</b></div>
+<input id="blur" max="80" min="0" type="range" value="34">
+</div>
+<div class="slider-field">
+<div><span data-i18n="dim">Przyciemnienie tła</span><b id="dimValue">72%</b></div>
+<input id="dim" max="100" min="35" type="range" value="72">
+</div>
+</details>
+<div class="buttons-row">
+<button class="secondary" data-i18n="reset" id="resetBtn" type="button">Reset kadru</button>
+<button class="secondary" data-i18n="demo" id="demoBtn" type="button">Demo</button>
+</div>
+</section>
+<section class="preview-panel" id="previewSection">
+<div class="phone-frame show-safe-zones" id="phoneFrame">
+<div class="phone-notch"></div>
+<canvas height="2408" id="wallpaperCanvas" width="1080"></canvas>
+<div class="safe-zone top-zone"><span data-i18n="safe_top">zegar / ikony</span></div>
+<div class="safe-zone bottom-zone"><span data-i18n="safe_bottom">nawigacja</span></div>
+</div>
+<p class="muted center" id="renderInfo">1080 × 2408</p>
+<p class="muted center" id="selectedInfo"></p>
+<p class="ready-info" data-i18n="ready_info" hidden="" id="readyInfo">Gotowe — dopasuj kadr i pobierz tapetę.</p>
+</section>
+<section class="panel export-panel">
+<h2 data-i18n="export_title">4. Pobierz tapetę</h2>
+<label class="field">
+<span data-i18n="file_name">Nazwa pliku</span>
+<input id="exportName" type="text" value="jnl-wallpaper-fit-1080x2408">
+</label>
+<label class="field">
+<span data-i18n="format">Format</span>
+<select id="exportFormat">
+<option value="image/jpeg">JPG</option>
+<option value="image/png">PNG</option>
+</select>
+</label>
+<div class="slider-field">
+<div><span data-i18n="quality">Jakość JPG</span><b id="qualityValue">95%</b></div>
+<input id="quality" max="100" min="60" type="range" value="95">
+</div>
+<button class="primary download-main" data-i18n="download" id="downloadBtn" type="button">Pobierz gotową tapetę</button>
+<div class="note">
+<strong data-i18n="pwa_title">Działa jak aplikacja</strong>
+<p data-i18n="pwa_text">Narzędzie korzysta z manifestu PWA i service workera. Przy połączeniu HTTPS można dodać je do ekranu głównego telefonu i korzystać z części funkcji offline.</p>
+</div>
+<div class="note soft">
+<strong data-i18n="resolution_note_title">Ważna informacja</strong>
+<p data-i18n="resolution_note">Przeglądarka czasem pokazuje wartości logiczne CSS, dlatego wynik wykrywania traktujemy jako najlepszą podpowiedź. W razie potrzeby można wpisać rozdzielczość ręcznie.</p>
+</div>
+<div class="brand-note">
+<p data-i18n="made_by">Darmowe narzędzie przygotowane przez JNL Software.</p>
+<a data-i18n="visit" href="https://www.jnlsoftware.pl/produkty/" rel="noopener" target="_blank">Zobacz nasze oprogramowanie</a>
+</div>
+</section>
+</main>
+<section class="seo-section">
+<h2 data-i18n="faq_h2">Najczęstsze pytania</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq_1_q">Czy moje zdjęcie jest wysyłane na serwer?</summary>
+<p data-i18n="faq_1_a">Nie. Zdjęcie jest przetwarzane lokalnie w przeglądarce przy użyciu Canvas API.</p>
+</details>
+<details>
+<summary data-i18n="faq_2_q">Dlaczego telefon ucina tapetę?</summary>
+<p data-i18n="faq_2_a">Telefon często przycina zdjęcie do proporcji ekranu. Tryb „pełny obraz + rozmyte tło” zachowuje całe zdjęcie i wypełnia brakujące miejsce tłem.</p>
+</details>
+<details>
+<summary data-i18n="faq_3_q">Czy wykrywanie rozdzielczości zawsze jest idealne?</summary>
+<p data-i18n="faq_3_a">Nie zawsze. Przeglądarki mogą pokazywać wartości logiczne CSS. Dlatego dostępne są ustawienia zaawansowane i ręczne wpisanie rozdzielczości.</p>
+</details>
+<details>
+<summary data-i18n="faq_4_q">Czy narzędzie działa offline?</summary>
+<p data-i18n="faq_4_a">Po pierwszym wejściu i wdrożeniu przez HTTPS aplikacja może działać w trybie offline dzięki service workerowi.</p>
+</details>
+</div>
+</section>
+<section class="seo-section privacy-section">
+<h2 data-i18n="privacy_h2">Prywatność</h2>
+<p data-i18n="privacy_text">JNL Wallpaper Fit przetwarza obraz lokalnie w przeglądarce. Zdjęcie pozostaje na Twoim urządzeniu. Ustawienia narzędzia mogą zostać zapisane lokalnie.</p>
+</section>
+<footer>
+<p>© <span id="year"></span> JNL Software — JNL Wallpaper Fit 0.6.1</p>
+</footer>
+<script src="js/i18n.js?v=20261115"></script>
+<script src="js/phones.js?v=20261115"></script>
+<script src="js/wallpaper-engine.js?v=20261115"></script>
+<script src="js/app.js?v=20261115"></script>
+</body>
+</html>

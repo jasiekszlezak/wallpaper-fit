@@ -1,0 +1,399 @@
+{
+  "schema_version": "0.6-dev",
+  "source_note": "Starterowa, ręcznie utrzymywana lista presetów. Lista jest ukryta w ustawieniach zaawansowanych, a domyślnie działa auto-wykrywanie ekranu.",
+  "default": "Android FHD+ 1080×2408",
+  "common_resolutions": [
+    {
+      "label": "Android FHD+ 20:9",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android"
+    },
+    {
+      "label": "Android FHD+ 20.1:9",
+      "width": 1080,
+      "height": 2408,
+      "category": "Android"
+    },
+    {
+      "label": "Android FHD+ 19.5:9",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android"
+    },
+    {
+      "label": "Android FHD+ 19.5:9 / 20:9",
+      "width": 1080,
+      "height": 2412,
+      "category": "Android"
+    },
+    {
+      "label": "Android QHD+",
+      "width": 1440,
+      "height": 3200,
+      "category": "Android"
+    },
+    {
+      "label": "Samsung QHD+",
+      "width": 1440,
+      "height": 3120,
+      "category": "Android"
+    },
+    {
+      "label": "Pixel high resolution",
+      "width": 1344,
+      "height": 2992,
+      "category": "Android"
+    },
+    {
+      "label": "iPhone 12 / 13 / 14",
+      "width": 1170,
+      "height": 2532,
+      "category": "iPhone"
+    },
+    {
+      "label": "iPhone 14 Pro / 15 / 15 Pro",
+      "width": 1179,
+      "height": 2556,
+      "category": "iPhone"
+    },
+    {
+      "label": "iPhone Plus / Pro Max",
+      "width": 1290,
+      "height": 2796,
+      "category": "iPhone"
+    },
+    {
+      "label": "iPhone 16 Pro",
+      "width": 1206,
+      "height": 2622,
+      "category": "iPhone"
+    },
+    {
+      "label": "iPhone 16 Pro Max",
+      "width": 1320,
+      "height": 2868,
+      "category": "iPhone"
+    },
+    {
+      "label": "HD+ budget Android",
+      "width": 720,
+      "height": 1600,
+      "category": "Android"
+    }
+  ],
+  "phones": [
+    {
+      "brand": "Hammer",
+      "model": "Construction 2 Thermal 5G",
+      "width": 1080,
+      "height": 2408,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Hammer",
+      "model": "Blade 5G",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S24",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S24+",
+      "width": 1440,
+      "height": 3120,
+      "category": "Android",
+      "notes": "QHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S24 Ultra",
+      "width": 1440,
+      "height": 3120,
+      "category": "Android",
+      "notes": "QHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S23",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S23 Ultra",
+      "width": 1440,
+      "height": 3088,
+      "category": "Android",
+      "notes": "QHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A55 5G",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A54 5G",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A35 5G",
+      "width": 1080,
+      "height": 2340,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip5",
+      "width": 1080,
+      "height": 2640,
+      "category": "Foldable",
+      "notes": "główny ekran"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16",
+      "width": 1179,
+      "height": 2556,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Plus",
+      "width": 1290,
+      "height": 2796,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Pro",
+      "width": 1206,
+      "height": 2622,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Pro Max",
+      "width": 1320,
+      "height": 2868,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15",
+      "width": 1179,
+      "height": 2556,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Plus",
+      "width": 1290,
+      "height": 2796,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro",
+      "width": 1179,
+      "height": 2556,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "width": 1290,
+      "height": 2796,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "width": 1170,
+      "height": 2532,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Pro",
+      "width": 1179,
+      "height": 2556,
+      "category": "iPhone",
+      "notes": "Super Retina"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "14 Ultra",
+      "width": 1440,
+      "height": 3200,
+      "category": "Android",
+      "notes": "WQHD+"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "14",
+      "width": 1200,
+      "height": 2670,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "13T / 13T Pro",
+      "width": 1220,
+      "height": 2712,
+      "category": "Android",
+      "notes": "1.5K"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 13 5G",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "POCO F6",
+      "width": 1220,
+      "height": 2712,
+      "category": "Android",
+      "notes": "1.5K"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 9",
+      "width": 1080,
+      "height": 2424,
+      "category": "Android",
+      "notes": "Actua"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 9 Pro",
+      "width": 1280,
+      "height": 2856,
+      "category": "Android",
+      "notes": "Super Actua"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 9 Pro XL",
+      "width": 1344,
+      "height": 2992,
+      "category": "Android",
+      "notes": "Super Actua"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 8",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android",
+      "notes": "Actua"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 8 Pro",
+      "width": 1344,
+      "height": 2992,
+      "category": "Android",
+      "notes": "Super Actua"
+    },
+    {
+      "brand": "OnePlus",
+      "model": "12",
+      "width": 1440,
+      "height": 3168,
+      "category": "Android",
+      "notes": "QHD+"
+    },
+    {
+      "brand": "OnePlus",
+      "model": "12R",
+      "width": 1264,
+      "height": 2780,
+      "category": "Android",
+      "notes": "1.5K"
+    },
+    {
+      "brand": "Motorola",
+      "model": "Edge 50 Pro",
+      "width": 1220,
+      "height": 2712,
+      "category": "Android",
+      "notes": "Super HD"
+    },
+    {
+      "brand": "Motorola",
+      "model": "Edge 50 Fusion",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno12 Pro",
+      "width": 1080,
+      "height": 2412,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Realme",
+      "model": "GT 6",
+      "width": 1264,
+      "height": 2780,
+      "category": "Android",
+      "notes": "1.5K"
+    },
+    {
+      "brand": "Nothing",
+      "model": "Phone (2)",
+      "width": 1080,
+      "height": 2412,
+      "category": "Android",
+      "notes": "FHD+"
+    },
+    {
+      "brand": "Asus",
+      "model": "ROG Phone 8",
+      "width": 1080,
+      "height": 2400,
+      "category": "Android",
+      "notes": "FHD+"
+    }
+  ]
+}
